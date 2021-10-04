@@ -13,12 +13,12 @@
         <?php
 
         if ($_POST) {
-            $firstname = $_POST['user_firstname'];
-            $name = $_POST['user_name'];
-            $email = $_POST['user_email'];
-            $phone = $_POST['phone_number'];
-            $theme = $_POST['theme'];
-            $message = $_POST['user_message'];
+            $firstname = htmlspecialchars($_POST['user_firstname']);
+            $name = htmlspecialchars($_POST['user_name']);
+            $email = htmlspecialchars($_POST['user_email']);
+            $phone = htmlspecialchars($_POST['phone_number']);
+            $theme = htmlspecialchars($_POST['theme']);
+            $message = htmlspecialchars($_POST['user_message']);
 
             if (
                 empty($firstname) ||
