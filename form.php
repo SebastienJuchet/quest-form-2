@@ -20,7 +20,7 @@
         </div>
         <div>
             <label for="courriel">Courriel :</label>
-            <input type="email" id="courriel" name="user_email" required>
+            <input type="email" id="courriel" name="user_email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
         </div>
         <div>
             <label for="phone-number">Numero de tel :</label>
